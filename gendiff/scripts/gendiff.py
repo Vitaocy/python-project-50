@@ -1,5 +1,3 @@
-import json
-
 def generate_diff(data1, data2):
     keys = sorted(data1.keys() | data2.keys())
     lines = ['{']
