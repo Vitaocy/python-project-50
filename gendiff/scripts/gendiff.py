@@ -1,4 +1,4 @@
-def generate_diff(data1, data2):
+def generate_diff(data1, data2, format = None):
     keys = sorted(data1.keys() | data2.keys())
     lines = ['{']
 

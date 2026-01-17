@@ -1,28 +1,18 @@
-import argparse
 import json
+import yaml
 
 from gendiff.scripts.gendiff import generate_diff
-
+from gendiff.scripts.parsers import open_file
+from gendiff.scripts.cli import parse_args
 
 def main():
-    parser = argparse.ArgumentParser(
-        description='Compares two configuration files and shows a difference.'
-    )
+    args = parse_args()
 
-    parser.add_argument('first_file')
-    parser.add_argument('second_file')
-    parser.add_argument(
-        '-f', '--format',
-        metavar='FORMAT',
-        help='set format of output'
-    )
-    
-    args = parser.parse_args()
-    
-    first_file = json.load(open(args.first_file))
-    second_file = json.load(open(args.second_file))
-    # output_format = args.format
-    diff = generate_diff(first_file, second_file)
+    first_file = open_file(args.first_file)
+    second_file = open_file(args.second_file)
+    output_format = args.format
+
+    diff = generate_diff(first_file, second_file, output_format)
     print(diff)
 
 
