@@ -8,3 +8,5 @@
 [![asciicast](https://asciinema.org/a/I6ZjNCjJRFGjbHKW.svg)](https://asciinema.org/a/I6ZjNCjJRFGjbHKW)
 ### С файлами .YAML:
 [![asciicast](https://asciinema.org/a/xGwiOv1oNltuZxpd.svg)](https://asciinema.org/a/xGwiOv1oNltuZxpd)
+### Файлы .json и .yaml с форматом вывода -f=stylish
+[![asciicast](https://asciinema.org/a/CjczjtYSaAlQyOnC.svg)](https://asciinema.org/a/CjczjtYSaAlQyOnC)

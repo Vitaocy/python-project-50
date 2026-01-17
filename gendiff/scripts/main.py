@@ -1,9 +1,7 @@
-import json
-import yaml
-
+from gendiff.scripts.cli import parse_args
 from gendiff.scripts.gendiff import generate_diff
 from gendiff.scripts.parsers import open_file
-from gendiff.scripts.cli import parse_args
+
 
 def main():
     args = parse_args()
