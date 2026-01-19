@@ -6,8 +6,8 @@ from gendiff.scripts.parsers import open_file
 def main():
     args = parse_args()
 
-    first_file = open_file(args.first_file)
-    second_file = open_file(args.second_file)
+    first_file = args.first_file
+    second_file = args.second_file
     output_format = args.format
 
     diff = generate_diff(first_file, second_file, output_format)
