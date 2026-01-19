@@ -54,3 +54,17 @@ def test_generate_diff_recursive_yaml_plain():
     second_file = open_file('examples/file_recursive2.yaml')
     diff = generate_diff(first_file, second_file, format_name='plain')
     assert diff == read_test_data('result_rec_plain.txt')
+
+
+def test_generate_diff_recursive_json_to_json():
+    first_file = open_file('examples/file_recursive1.json')
+    second_file = open_file('examples/file_recursive2.json')
+    diff = generate_diff(first_file, second_file, format_name='json')
+    assert diff == read_test_data('result_rec_json.txt')
+
+
+def test_generate_diff_recursive_yaml_to_json():
+    first_file = open_file('examples/file_recursive1.yaml')
+    second_file = open_file('examples/file_recursive2.yaml')
+    diff = generate_diff(first_file, second_file, format_name='json')
+    assert diff == read_test_data('result_rec_json.txt')

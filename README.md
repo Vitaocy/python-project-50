@@ -19,7 +19,12 @@
   <img src="https://asciinema.org/a/CjczjtYSaAlQyOnC.svg" width="300">
 </a>
 
-### gendiff recursive.json -f plain
+### Вложенные .json с форматом -f plain
 <a href="https://asciinema.org/a/0fKhJmC9X6gMWzhI">
   <img src="https://asciinema.org/a/0fKhJmC9X6gMWzhI.svg" width="300" height = "50">
+</a>
+
+### Простой .json в машиночитаемом формате изменений -f json
+<a href="https://asciinema.org/a/rbRoyjnLGNuHX1Zk">
+  <img src="https://asciinema.org/a/rbRoyjnLGNuHX1Zk.svg" width="300">
 </a>

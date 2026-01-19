@@ -1,3 +1,4 @@
+from gendiff.formats.json import json_format
 from gendiff.formats.plain import plain
 from gendiff.formats.stylish import stylish
 
@@ -49,5 +50,8 @@ def generate_diff(data1, data2, format_name='stylish'):
 
     if format_name == 'plain':
         return plain(diff)
+
+    if format_name == 'json':
+        return json_format(diff)
 
     raise ValueError(f'Unknown format: {format_name}')
