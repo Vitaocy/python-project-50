@@ -18,3 +18,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+./__pycache__
+.pytest_cache
+.ruff_cache
+gendiff/scripts/__pycache__
+gendiff/__pycache__

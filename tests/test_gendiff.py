@@ -11,22 +11,6 @@ def read_test_data(filename):
     return get_test_data_path(filename).read_text()
 
 
-# def test_generate_diff_old_json():
-#     first_file = open_file('examples/file1.json')
-#     second_file = open_file('examples/file2.json')
-#     diff = generate_diff(first_file, second_file, format_name='plain')
-#     expected = read_test_data('result_gendiff.txt')
-#     assert diff == expected
-
-
-# def test_generate_diff_old_yaml():
-#     first_file = open_file('examples/file1.yaml')
-#     second_file = open_file('examples/file2.yaml')
-#     diff = generate_diff(first_file, second_file, format_name='plain')
-#     expected = read_test_data('result_gendiff.txt')
-#     assert diff == expected
-
-
 def test_generate_diff_recursive_json_stylish():
     first_file = 'examples/file_recursive1.json'
     second_file = 'examples/file_recursive2.json'
