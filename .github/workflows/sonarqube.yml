@@ -21,10 +21,13 @@ jobs:
         run: pip install tox
       - name: Run tox
         run: tox -e py
-      - name: SonarQube Scan
+        
+      - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v7
         with:
-          organization: 'vitaocy'
-          projectKey: 'Vitaocy_python-project-50'
+          args: >
+            -Dsonar.projectKey=your_project_key
+            -Dsonar.organization=your_org_key
+            -Dsonar.sources=.
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
