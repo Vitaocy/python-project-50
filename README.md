@@ -4,9 +4,22 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Vitaocy_python-project-50&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Vitaocy_python-project-50)
 
 ## Пример использования
-### С файлами .JSON:
-[![asciicast](https://asciinema.org/a/I6ZjNCjJRFGjbHKW.svg)](https://asciinema.org/a/I6ZjNCjJRFGjbHKW)
-### С файлами .YAML:
-[![asciicast](https://asciinema.org/a/xGwiOv1oNltuZxpd.svg)](https://asciinema.org/a/xGwiOv1oNltuZxpd)
-### Файлы .json и .yaml с форматом вывода -f=stylish
-[![asciicast](https://asciinema.org/a/CjczjtYSaAlQyOnC.svg)](https://asciinema.org/a/CjczjtYSaAlQyOnC)
+### С файлами .JSON (-f stylish):
+<a href="https://asciinema.org/a/I6ZjNCjJRFGjbHKW">
+  <img src="https://asciinema.org/a/I6ZjNCjJRFGjbHKW.svg" width="300">
+</a>
+
+### С файлами .YAML (-f stylish):
+<a href="https://asciinema.org/a/xGwiOv1oNltuZxpd">
+  <img src="https://asciinema.org/a/xGwiOv1oNltuZxpd.svg" width="300">
+</a>
+
+### Файлы .json и .yaml с форматом вывода -f stylish
+<a href="https://asciinema.org/a/CjczjtYSaAlQyOnC">
+  <img src="https://asciinema.org/a/CjczjtYSaAlQyOnC.svg" width="300">
+</a>
+
+### gendiff recursive.json -f plain
+<a href="https://asciinema.org/a/0fKhJmC9X6gMWzhI">
+  <img src="https://asciinema.org/a/0fKhJmC9X6gMWzhI.svg" width="300" height = "50">
+</a>
