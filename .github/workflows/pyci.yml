@@ -24,13 +24,13 @@ jobs:
       - run: make lint
 
       - name: SonarQubeScan
-        uses: SonarSource/sonarqube-scan-action@v5
+        uses: SonarSource/sonarqube-scan-action@v6
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=python-project-50
-            -Dsonar.organization=Vitaocy
+            -Dsonar.projectKey=Vitaocy_python-project-50
+            -Dsonar.organization=vitaocy
             -Dsonar.python.coverage.reportPaths=coverage.xml
             -Dsonar.coverage.exclusions=tests/**
             -Dsonar.exclusions=tests/**
