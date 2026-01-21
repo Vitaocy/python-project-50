@@ -14,58 +14,58 @@ def read_test_data(filename):
 
 
 def test_generate_diff_recursive_json_stylish():
-    first_file = 'examples/file_recursive1.json'
-    second_file = 'examples/file_recursive2.json'
+    first_file = 'tests/test_data/file_recursive1.json'
+    second_file = 'tests/test_data/file_recursive2.json'
     diff = generate_diff(first_file, second_file)
     assert diff == read_test_data('result_recursive.txt')
 
 
 def test_generate_diff_recursive_yaml_stylish():
-    first_file = 'examples/file_recursive1.yaml'
-    second_file = 'examples/file_recursive2.yaml'
+    first_file = 'tests/test_data/file_recursive1.yaml'
+    second_file = 'tests/test_data/file_recursive2.yaml'
     diff = generate_diff(first_file, second_file)
     assert diff == read_test_data('result_recursive.txt')
 
 
 def test_generate_diff_recursive_json_plain():
-    first_file = 'examples/file_recursive1.json'
-    second_file = 'examples/file_recursive2.json'
+    first_file = 'tests/test_data/file_recursive1.json'
+    second_file = 'tests/test_data/file_recursive2.json'
     diff = generate_diff(first_file, second_file, format_name='plain')
     assert diff == read_test_data('result_rec_plain.txt')
 
 
 def test_generate_diff_recursive_yaml_plain():
-    first_file = 'examples/file_recursive1.yaml'
-    second_file = 'examples/file_recursive2.yaml'
+    first_file = 'tests/test_data/file_recursive1.yaml'
+    second_file = 'tests/test_data/file_recursive2.yaml'
     diff = generate_diff(first_file, second_file, format_name='plain')
     assert diff == read_test_data('result_rec_plain.txt')
 
 
 def test_generate_diff_recursive_json_to_json():
-    first_file = 'examples/file_recursive1.json'
-    second_file = 'examples/file_recursive2.json'
+    first_file = 'tests/test_data/file_recursive1.json'
+    second_file = 'tests/test_data/file_recursive2.json'
     diff = generate_diff(first_file, second_file, format_name='json')
     assert diff == read_test_data('result_rec_json.txt')
 
 
 def test_generate_diff_recursive_yaml_to_json():
-    first_file = 'examples/file_recursive1.yaml'
-    second_file = 'examples/file_recursive2.yaml'
+    first_file = 'tests/test_data/file_recursive1.yaml'
+    second_file = 'tests/test_data/file_recursive2.yaml'
     diff = generate_diff(first_file, second_file, format_name='json')
     assert diff == read_test_data('result_rec_json.txt')
 
 
 def test_not_existing_file():
     first_file = 'nonfile1.json'
-    second_file = 'examples/file2.json'
+    second_file = 'tests/test_data/file2.json'
     # файл не существует
     with pytest.raises(FileNotFoundError):
         generate_diff(first_file, second_file)
 
 
 def test_incorrect_format():
-    first_file = 'examples/file1.json'
-    second_file = 'examples/file2.json'
+    first_file = 'tests/test_data/file1.json'
+    second_file = 'tests/test_data/file2.json'
     with pytest.raises(ValueError):
         generate_diff(first_file, second_file, format_name='unknown_format')
 
